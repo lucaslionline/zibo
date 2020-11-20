@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>山东省淄博市清洁取暖电子台账</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/default.css" rel="stylesheet">
+    <link href="assets/css/dashboard.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="index.html">山东省淄博市清洁取暖电子台账</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="index.html">退出</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">
+                                <span data-feather="home"></span>
+                                首页
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="edit.html">
+                                <span data-feather="edit"></span>
+                                信息录入
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>区县详情</span>
+                    </h6>
+
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="districts/zhangdian.html">
+                                <i data-feather="file-text"></i>
+                                张店区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                淄川区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                博山区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                周村区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                临淄区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                桓台县
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                高青县
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                沂源县
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                高新区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                经开区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                文昌湖区
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">信息录入</h1>
+                </div>
+
+                <!--canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas-->
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>县（市、区）</th>
+                                <th>乡镇（街道）</th>
+                                <th>村（居）</th>
+                                <th>门牌号码</th>
+                                <th>用户名</th>
+                                <th>身份证号</th>
+                                <th>集中供热</th>
+                                <th>分散取暖</th>
+                                <th>通气通电点火</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0001</td>
+                                <td>
+                                    <select class="custom-select">
+                                        <option>请选择……</option>
+                                        <option>张店区</option>
+                                        <option>淄川区</option>
+                                        <option>博山区</option>
+                                        <option>周村区</option>
+                                        <option>临淄区</option>
+                                        <option>桓台县</option>
+                                        <option>高青县</option>
+                                        <option>沂源县</option>
+                                        <option>高新区</option>
+                                        <option>经开区</option>
+                                        <option>文昌湖区</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="custom-select">
+                                        <option>请选择……</option>
+                                        <option>马尚镇</option>
+                                        <option>房镇镇</option>
+                                        <option>傅家镇</option>
+                                        <option>湖田办</option>
+                                        <option>湖田街道</option>
+                                        <option>南定镇</option>
+                                        <option>中埠镇</option>
+                                    </select>
+                                </td>
+                                <td><input type="" name="" class="form-control"></td>
+                                <td><input type="" name="" class="form-control"></td>
+                                <td><input type="" name="" class="form-control"></td>
+                                <td><input type="" name="" class="form-control"></td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="centralHeating" id="centralHeatingYes" value="">
+                                        <label class="form-check-label" for="centralHeatingYes">是
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="centralHeating" id="centralHeatingNo" value="">
+                                        <label class="form-check-label" for="centralHeatingNo">否
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="gas">
+                                        <label class="form-check-label" for="gas">天然气</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="elec">
+                                        <label class="form-check-label" for="elec">电能</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="bio">
+                                        <label class="form-check-label" for="bio">生物质能</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="others">
+                                        <label class="form-check-label" for="others">其它（不包括洁净煤）</label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="done" id="doneYes" value="">
+                                        <label class="form-check-label" for="doneYes">是
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="done" id="doneNo" value="">
+                                        <label class="form-check-label" for="doneNo">否
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <button type="button" class="btn btn-sm btn-outline-primary"><i data-feather="plus-circle"></i> 新增</button>
+                <button type="button" class="btn btn-sm btn-primary"><i data-feather="save"></i> 保存</button>
+            </main>
+        </div>
+    </div>
+
+    <script>feather.replace()</script>
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

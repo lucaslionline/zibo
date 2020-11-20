@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>山东省淄博市清洁取暖电子台账</title>
+
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/default.css" rel="stylesheet">
+    <link href="../assets/css/dashboard.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="../index.html">山东省淄博市清洁取暖电子台账</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="../index.html">退出</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../home.html">
+                                <span data-feather="home"></span>
+                                首页
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../edit.html">
+                                <span data-feather="edit"></span>
+                                信息录入
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>区县详情</span>
+                    </h6>
+
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i data-feather="file-text"></i>
+                                张店区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                淄川区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                博山区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                周村区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                临淄区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                桓台县
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                高青县
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                沂源县
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                高新区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                经开区
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-feather="file-text"></i>
+                                文昌湖区
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">张店区</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle mr-2" id="year" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="calendar"></i> 2019</button>
+                        <div class="dropdown-menu" aria-labelledby="year">
+                            <a class="dropdown-item" href="#">2019</a>
+                            <a class="dropdown-item" href="#">2018</a>
+                            <a class="dropdown-item" href="#">2017</a>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i data-feather="download"></i> 导出</button>
+                    </div>
+                </div>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="stats-tab" data-toggle="tab" href="#stats" role="tab" aria-controls="stats" aria-selected="true">村（居）统计</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false">到户台账</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="stats" role="tabpanel" aria-labelledby="stats-tab">
+                        <div class="table-responsive">
+                            <h3 class="mb-4 mt-4">2019年张店区农村地区清洁取暖建设竣工台账分村（居）统计表</h3>
+                            <table class="table table-striped table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>县（市、区）</th>
+                                        <th>乡镇（街道）</th>
+                                        <th>村（居）</th>
+                                        <th>总户数</th>
+                                        <th>集中供热户数</th>
+                                        <th>天然气</th>
+                                        <th>电能</th>
+                                        <th>生物质能</th>
+                                        <th>其它（不包括洁净煤）</th>
+                                        <th>通气通电点火</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0001</td>
+                                        <td>张店区</td>
+                                        <td>马尚镇</td>
+                                        <td>明博新城项目</td>
+                                        <td>1078</td>
+                                        <td>1078</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>是</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0002</td>
+                                        <td>张店区</td>
+                                        <td>湖田街道</td>
+                                        <td>杏园</td>
+                                        <td>32</td>
+                                        <td>0</td>
+                                        <td>32</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>是</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0003</td>
+                                        <td>张店区</td>
+                                        <td>湖田街道</td>
+                                        <td>辛安店</td>
+                                        <td>166</td>
+                                        <td>0</td>
+                                        <td>166</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>是</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0004</td>
+                                        <td>张店区</td>
+                                        <td>中埠镇</td>
+                                        <td>铁冶村</td>
+                                        <td>627</td>
+                                        <td>0</td>
+                                        <td>501</td>
+                                        <td>126</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>是</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0005</td>
+                                        <td>张店区</td>
+                                        <td>中埠镇</td>
+                                        <td>大王村</td>
+                                        <td>268</td>
+                                        <td>0</td>
+                                        <td>187</td>
+                                        <td>81</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>是</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+                        <h3 class="mb-4 mt-4">2019年张店区农村地区清洁取暖建设竣工台账</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>县（市、区）</th>
+                                        <th>乡镇（街道）</th>
+                                        <th>村（居）</th>
+                                        <th>门牌号码</th>
+                                        <th>用户名</th>
+                                        <th>身份证号</th>
+                                        <th>集中供热</th>
+                                        <th>分散取暖</th>
+                                        <th>通气通电点火</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0001</td>
+                                        <td>张店区</td>
+                                        <td>马尚镇</td>
+                                        <td>明博新城项目</td>
+                                        <td>1号楼1单元301室</td>
+                                        <td>吴苹</td>
+                                        <td>370303197811126346</td>
+                                        <td>是</td>
+                                        <td></td>
+                                        <td>是</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0002</td>
+                                        <td>张店区</td>
+                                        <td>马尚镇</td>
+                                        <td>明博新城项目</td>
+                                        <td>1号楼1单元302室</td>
+                                        <td>张文</td>
+                                        <td>370303197410316317</td>
+                                        <td>是</td>
+                                        <td></td>
+                                        <td>是</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0003</td>
+                                        <td>张店区</td>
+                                        <td>马尚镇</td>
+                                        <td>明博新城项目</td>
+                                        <td>1号楼1单元303室</td>
+                                        <td>姜帅祥</td>
+                                        <td>370305198608154330</td>
+                                        <td>是</td>
+                                        <td></td>
+                                        <td>是</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0004</td>
+                                        <td>张店区</td>
+                                        <td>马尚镇</td>
+                                        <td>明博新城项目</td>
+                                        <td>1号楼1单元304室</td>
+                                        <td>张栋梁</td>
+                                        <td>370322199201121912</td>
+                                        <td>是</td>
+                                        <td></td>
+                                        <td>是</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0005</td>
+                                        <td>张店区</td>
+                                        <td>马尚镇</td>
+                                        <td>明博新城项目</td>
+                                        <td>1号楼1单元305室</td>
+                                        <td>朱茂剑</td>
+                                        <td>371328199101056010</td>
+                                        <td>是</td>
+                                        <td></td>
+                                        <td>是</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0006</td>
+                                        <td>张店区</td>
+                                        <td>马尚镇</td>
+                                        <td>明博新城项目</td>
+                                        <td>1号楼1单元306室</td>
+                                        <td>张伟</td>
+                                        <td>42080219840801175X</td>
+                                        <td>是</td>
+                                        <td></td>
+                                        <td>是</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0007</td>
+                                        <td>张店区</td>
+                                        <td>马尚镇</td>
+                                        <td>明博新城项目</td>
+                                        <td>1号楼1单元307室</td>
+                                        <td>胡彬</td>
+                                        <td>370303198806212029</td>
+                                        <td>是</td>
+                                        <td></td>
+                                        <td>是</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>feather.replace()</script>
+    <script src="../assets/js/jquery-3.5.1.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
